@@ -1,1 +1,7 @@
 language: php
+
+before_script:
+    cd taskmanager/
+
+script:
+    - ./vendor/bin/behat

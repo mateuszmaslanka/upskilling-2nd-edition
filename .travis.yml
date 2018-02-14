@@ -1,7 +1,8 @@
 language: php
 
 before_script:
-    cd taskmanager/
+    - cd taskmanager/
+    - travis_retry composer install
 
 script:
     - ./vendor/bin/behat

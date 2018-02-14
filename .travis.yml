@@ -4,7 +4,7 @@ php:
     - 7.1
     - 7.2
     - 7.3
-    - nigthly
+    - nightly
 
 before_script:
     - cd taskmanager/
@@ -13,3 +13,8 @@ before_script:
 script:
     - ./vendor/bin/phpspec run
     - ./vendor/bin/behat
+
+matrix:
+    allow_failures:
+        - php: 7.3
+        - php: nightly

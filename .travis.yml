@@ -2,10 +2,14 @@ language: php
 
 php:
     - 7.1
+    - 7.2
+    - 7.3
+    - nigthly
 
 before_script:
     - cd taskmanager/
     - travis_retry composer install
 
 script:
+    - ./vendor/bin/phpspec run
     - ./vendor/bin/behat

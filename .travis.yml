@@ -1,5 +1,8 @@
 language: php
 
+php:
+    - 7.1
+
 before_script:
     - cd taskmanager/
     - travis_retry composer install

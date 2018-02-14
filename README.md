@@ -1,6 +1,7 @@
 # Task Manager
 Self learning project
 
+[![Build Status](https://travis-ci.org/mateuszmaslanka/upskilling-2nd-edition.svg?branch=feature%2Ftravis)](https://travis-ci.org/mateuszmaslanka/upskilling-2nd-edition)
 
 ## Installation
 Clone repository
